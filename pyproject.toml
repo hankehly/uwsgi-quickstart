@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "uwsgi-test"
+version = "0.1.0"
+description = ""
+authors = ["Hank Ehly <henry.ehly@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+django = "^2.2"
+uwsgi = "^2.0"
+uwsgitop = "^0.11.0"
+
+[tool.poetry.dev-dependencies]
+ipdb = "^0.12.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
