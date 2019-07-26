@@ -5,7 +5,7 @@ description = ""
 authors = ["Hank Ehly <henry.ehly@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.6"
 django = "^2.2"
 uwsgi = "^2.0"
 uwsgitop = "^0.11.0"
