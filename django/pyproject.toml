@@ -9,6 +9,7 @@ python = "^3.6"
 django = "^2.2"
 uwsgi = "^2.0"
 uwsgitop = "^0.11.0"
+psycopg2 = "^2.8"
 
 [tool.poetry.dev-dependencies]
 ipdb = "^0.12.0"
