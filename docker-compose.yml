@@ -1,13 +1,15 @@
 version: '3.7'
 services:
-    nginx:
-        build: nginx
-        ports:
-            - '8080:80'
-        depends_on:
-            - django
-    django:
-        build: django
-        command: poetry run uwsgi /app/uwsgi.ini
-        volumes:
-            - ./django:/app
+  nginx:
+    build: nginx
+    ports:
+      - '8080:80'
+    depends_on:
+      - django
+  django:
+    build: django
+    command: poetry run uwsgi /app/uwsgi.ini
+    volumes:
+      - ./django:/app
+    environment:
+      APP_DIR: '/app'
